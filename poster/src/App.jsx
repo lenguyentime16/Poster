@@ -9,10 +9,10 @@ const letters = [
   {
     id: '01',
     badge: 'Bức thư 01',
-    title: 'Người giữ lửa cho mọi hành trình',
+    title: 'Bố m đẳng cấp',
     excerpt:
-      'Cảm ơn vì những lần đến sớm, về muộn, và luôn giữ cho nhiệt huyết của câu lạc bộ không bao giờ tắt.',
-    signature: 'Dành cho những người luôn âm thầm gánh việc',
+      'Bạn cũng tạm ',
+    signature: 'mấy con gà biết đéo gì',
     accent: '#bf5f71',
     tilt: '-4deg',
     delay: '0ms',
@@ -23,10 +23,10 @@ const letters = [
   {
     id: '02',
     badge: 'Bức thư 02',
-    title: 'Người đứng sau ánh đèn',
+    title: 'điếu thuốc tàn t nhặt lên hút lại',
     excerpt:
-      'Cảm ơn vì những checklist, những file thiết kế, những đầu việc hậu cần mà khán giả hiếm khi nhìn thấy nhưng luôn được hưởng trọn vẹn.',
-    signature: 'Tri ân đội hậu trường và vận hành',
+      'bạn như l t đéo cần lần hai',
+    signature: 'đẳng cấp là mãi mãi',
     accent: '#d59a4b',
     tilt: '3deg',
     delay: '120ms',
@@ -37,10 +37,10 @@ const letters = [
   {
     id: '03',
     badge: 'Bức thư 03',
-    title: 'Người lan tỏa năng lượng đẹp',
+    title: 'Nếu cả đời không rực rỡ thì sao',
     excerpt:
-      'Cảm ơn vì sự nhiệt tình, sự động viên và những tiếng cười giúp mỗi thành viên cảm thấy mình thuộc về nơi này.',
-    signature: 'Gửi đến những trái tim luôn kết nối mọi người',
+      'thì nhìn thằng bố m đây ',
+    signature: 'đứa nào cũng rực rỡ thì mù mắt cả lũ à',
     accent: '#7c8f73',
     tilt: '-2deg',
     delay: '240ms',
@@ -51,10 +51,10 @@ const letters = [
   {
     id: '04',
     badge: 'Bức thư 04',
-    title: 'Người đồng hành bền bỉ qua từng mùa',
+    title: 'Hỡi em giữa muôn trùng vạn thế',
     excerpt:
-      'Cảm ơn vì đã ở lại qua nhiều mùa hoạt động, xây từng viên gạch nhỏ để câu lạc bộ lớn lên thật đẹp và thật vững.',
-    signature: 'Gửi tới những người đã chọn đồng hành lâu dài',
+      'đi một vòng rồi có về với nhau?',
+    signature: ' công bằng cho anh JACK',
     accent: '#c77759',
     tilt: '4deg',
     delay: '360ms',
@@ -65,10 +65,10 @@ const letters = [
   {
     id: '05',
     badge: 'Bức thư 05',
-    title: 'Người để lại dấu ấn tử tế',
+    title: 'Cảm ơn người đã tìm đến tôi',
     excerpt:
-      'Cảm ơn vì mỗi ý tưởng, mỗi lời góp ý, mỗi lần sẵn sàng nói "để mình hỗ trợ" để tập thể này trở nên đáng tự hào hơn.',
-    signature: 'Một bức thư nhỏ cho những điều lớn lao',
+      'rồi rời đi sau muôn ngàn nuối tiếc',
+    signature: 'tiếc cho bạn th chứ đẳng cấp như bố tiếc đ gì ai',
     accent: '#9a67b3',
     tilt: '-3deg',
     delay: '480ms',
@@ -234,9 +234,8 @@ function App() {
       </section>
 
       <section
-        className={`letters-stage ${isRevealed ? 'is-visible' : ''} ${
-          activeLetterId ? 'has-selected' : ''
-        }`}
+        className={`letters-stage ${isRevealed ? 'is-visible' : ''} ${activeLetterId ? 'has-selected' : ''
+          }`}
         aria-label="Năm phong bì tri ân"
       >
         {letters.map((letter) => {
