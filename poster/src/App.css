@@ -13,6 +13,7 @@
   position: absolute;
   inset: 0;
   background:
+    url('/đẳng cấp.jpg') center/cover no-repeat,
     radial-gradient(circle at 8% 12%, rgba(248, 197, 188, 0.34), transparent 18%),
     radial-gradient(circle at 92% 82%, rgba(244, 188, 182, 0.34), transparent 17%),
     repeating-linear-gradient(

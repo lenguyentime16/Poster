@@ -13,6 +13,7 @@ const letters = [
     excerpt:
       'Bạn cũng tạm ',
     signature: 'mấy con gà biết đéo gì',
+    image: '/bckgrd.jpg',
     accent: '#bf5f71',
     tilt: '-4deg',
     delay: '0ms',
@@ -23,10 +24,10 @@ const letters = [
   {
     id: '02',
     badge: 'Bức thư 02',
-    title: 'điếu thuốc tàn t nhặt lên hút lại',
+    title: 'nà ná na na',
     excerpt:
-      'bạn như l t đéo cần lần hai',
-    signature: 'đẳng cấp là mãi mãi',
+      'anh ộ i i',
+    signature: 'cam ơn anh a phùng thanh độ',
     accent: '#d59a4b',
     tilt: '3deg',
     delay: '120ms',
@@ -306,10 +307,21 @@ function App() {
             <div className="reader-envelope">
               <div className="reader-envelope__back" />
 
-              <div className="reader-paper">
-                <h2 id={`letter-title-${activeLetter.id}`}>{activeLetter.title}</h2>
-                <p>{activeLetter.excerpt}</p>
-                <p className="reader-paper__signature">{activeLetter.signature}</p>
+              <div
+                className="reader-paper"
+                style={{
+                  background: activeLetter.image
+                    ? `linear-gradient(180deg, rgba(255,255,255,0.92) 0%, rgba(255,255,255,0.8) 100%), url("${activeLetter.image}") center/cover no-repeat`
+                    : 'linear-gradient(180deg, #fff 0%, #fffaf7 100%)',
+                }}
+              >
+                {activeLetter.id === '02' && (
+                  <>
+                    <h2 id={`letter-title-${activeLetter.id}`}>{activeLetter.title}</h2>
+                    <p>{activeLetter.excerpt}</p>
+                    <p className="reader-paper__signature">{activeLetter.signature}</p>
+                  </>
+                )}
               </div>
 
               <div className="reader-envelope__front" />
